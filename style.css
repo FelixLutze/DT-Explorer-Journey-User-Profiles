@@ -1,0 +1,56 @@
+body {
+    font-family: "TeleNeo Office";
+    font-size: 1.3em;
+}
+
+/* Header */
+
+header h1 {
+    text-align: center;
+}
+
+/* Form section */
+
+form {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+form div{
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+#btn-create-profile {
+    font-size: inherit;
+}
+
+/* Profile list section */
+
+section {
+    text-align: center;
+}
+
+section div {
+    display: inline-block;
+    /* float: left; */
+    box-sizing: border-box;
+    width: 33.3333%;
+    padding: 20px;
+    text-align: center;
+}
+
+section div img {
+    width: 100%;
+}
+
+/* Input validation */
+
+.errorInput {
+    border: red solid 2px;
+}
+
+.validInput {
+    border: green solid 2px;
+}

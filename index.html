@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week9</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Create Profiles</h1>
+        </header>
+    
+        <form action="https://google.de" onsubmit="return submitForm(event);">
+            <!-- Enter username -->
+            <div>
+                <label for="username">Username:</label>
+                <input onblur="checkUsername()" type="text" id="username">
+            </div>
+    
+            <!-- Enter image source -->
+            <div>
+                <label for="profile-image">Profile Image:</label>
+                <input onblur="checkImage()" type="text" id="profile-image">
+            </div>
+    
+            <!-- Radio buttons -->
+            <div>
+                <label>I like:</label>
+                <input onblur="validLanguage()" class="language" type="radio" id="html" value="HTML" name="language">
+                <label for="html">HTML</label>
+                <input onblur="validLanguage()" class="language" type="radio" id="css" value="CSS" name="language">
+                <label for="css">CSS</label>
+                <input onblur="validLanguage()" class="language" type="radio" id="js" value="JavaScript" name="language">
+                <label for="js">JavaScript</label>
+            </div>
+    
+            <!-- Validate form and create profile -->
+            <input onclick="createProfile()" type="button" id="btn-create-profile" value="Create Profile">
+        </form>
+    
+        <section id="profile-list">
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
